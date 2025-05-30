@@ -1,7 +1,21 @@
+import Navigation from "./components/navigations/Navigation";
+import Contact from "./components/pages/Contact";
+import HeroSection from "./components/pages/Hero";
+import Projects from "./components/pages/Projects";
+import Technologies from "./components/pages/Technologies";
+import ToTopButton from "./components/buttons/ToTopButton";
+import { Toaster } from "react-hot-toast";
+
 export default function Home() {
   return (
-    <div className={"text-red-800"}>
-      <h1 className="font-bold text-xl">Hallo Bang</h1>
-    </div>
+    <>
+      <Toaster />
+      <Navigation />
+      <HeroSection />
+      <Technologies />
+      <Projects />
+      <Contact />
+      <ToTopButton />
+    </>
   );
 }
