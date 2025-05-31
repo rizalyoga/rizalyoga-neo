@@ -8,8 +8,9 @@ import SEO from "@/app/components/SEO/SEO";
 import Image from "next/image";
 import { PiGithubLogoBold } from "react-icons/pi";
 import { myProjects } from "@/app/data/projects";
-import clsx from "clsx";
 import NotFound from "@/app/not-found";
+import LinkStringButton from "@/app/components/buttons/LinkStringButton";
+import CheckBoxFeatures from "@/app/components/buttons/CheckBoxFeatures";
 
 const ProjectDetail = () => {
   const { project_id } = useParams();
@@ -50,11 +51,11 @@ const ProjectDetail = () => {
         </nav>
 
         {/* Project Content */}
-        <div className="container px-6 py-12 mx-auto">
-          <div className="grid items-start gap-12 lg:grid-cols-2">
+        <div className="container px-6 py-12 max-w-screen-md mx-auto">
+          <div className="grid items-start gap-12 ">
             {/* Project Image */}
-            <div className="order-2 lg:order-1">
-              <div className="-mt-1 lg:mt-3 bg-indigo-400 dark:bg-indigo-300 h-full p-6 border-4 border-black shadow-[12px_12px_0px_0px_#000]">
+            <div className="order-2 lg:order-1 ">
+              <div className="-mt-1 lg:mt-3 bg-indigo-400 dark:bg-indigo-300 h-full shadow-board-contact-description">
                 <div className="relative w-full h-[300px]">
                   <Image
                     src={
@@ -78,7 +79,7 @@ const ProjectDetail = () => {
                 {project?.title}
               </h1>
 
-              <div className="bg-yellow-300 dark:bg-yellow-200 p-6 border-4 border-black shadow-[8px_8px_0px_0px_#000] mb-8">
+              <div className="bg-yellow-300 dark:bg-yellow-200 mb-8 shadow-board-contact-description">
                 <p className="text-lg font-bold leading-relaxed text-black">
                   {project?.description}
                 </p>
@@ -86,34 +87,25 @@ const ProjectDetail = () => {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-4 mb-8">
-                <Link
-                  href={project?.demoUrl as string}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={clsx(
-                    "inline-flex items-center gap-2 bg-lime-400 dark:bg-lime-300 text-black px-6 py-3 font-bold border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1",
-                    project?.demoUrl
-                      ? ""
-                      : "cursor-none pointer-events-none !bg-gray-600 dark:!bg-gray-500 shadow-none"
-                  )}
-                >
-                  <ExternalLink size={20} />
-                  Live Demo
-                </Link>
-                <Link
-                  href={project?.githubUrl as string}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={clsx(
-                    "inline-flex items-center gap-2 bg-orange-400 dark:bg-orange-300 text-black px-6 py-3 font-bold border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1",
-                    project?.githubUrl
-                      ? ""
-                      : "cursor-none pointer-events-none !bg-gray-600 dark:!bg-gray-500 shadow-none"
-                  )}
-                >
-                  <PiGithubLogoBold size={20} />
-                  View Code
-                </Link>
+                <LinkStringButton
+                  btnTitle="Live Demo"
+                  bgColor="bg-lime-400 dark:bg-lime-300"
+                  textColor="text-black"
+                  directUrl={project?.demoUrl}
+                  icon={<ExternalLink size={20} />}
+                  px="px-6"
+                  py="py-3"
+                />
+
+                <LinkStringButton
+                  btnTitle="View Code"
+                  bgColor="bg-orange-400 dark:bg-orange-300"
+                  textColor="text-black"
+                  directUrl={project?.githubUrl}
+                  icon={<PiGithubLogoBold size={20} />}
+                  px="px-6"
+                  py="py-3"
+                />
               </div>
 
               {/* Technologies */}
@@ -134,31 +126,15 @@ const ProjectDetail = () => {
               </div>
 
               {/* Features */}
-              <div>
-                <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
-                  Key Features
-                </h3>
-                <div className="bg-slate-100 dark:bg-gray-800 border-4 border-black shadow-[8px_8px_0px_0px_#000] p-6">
-                  <ul className="space-y-3">
-                    {project?.features.map((feature, index) => (
-                      <li key={index} className="flex items-center gap-3">
-                        {/* <div className="w-3 h-3 bg-black dark:bg-white"></div> */}
-                        <label>
-                          <input
-                            type="checkbox"
-                            className={
-                              "appearance-none outline-none block relative text-center m-auto w-5 h-5 before:block before:absolute before:content-[''] before:bg-lime-400 before:w-5 before:h-5 before:border-black before:border-2 before:shadow-[3px_3px_0px_rgba(0,0,0,1)]  after:block after:content-[''] after:absolute after:left-1.5 after:top-0.5 after:w-2 after:h-3 after:border-black after:border-r-2 after:border-b-2 after:origin-center after:rotate-45 after:opacity-1 before:checked:bg-bg-lime-400"
-                            }
-                            defaultChecked
-                          />
-                        </label>
-                        <span className="font-bold text-black dark:text-white">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
+                Key Features
+              </h3>
+              <div className="bg-slate-100 dark:bg-gray-800 shadow-board-contact-description">
+                <ul className="space-y-3">
+                  {project?.features.map((feature, index) => (
+                    <CheckBoxFeatures feature={feature} key={index} />
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

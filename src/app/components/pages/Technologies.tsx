@@ -1,3 +1,4 @@
+import TechnologiesCard from "../cards/TechnologiesCard";
 import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { FaNode } from "react-icons/fa6";
 import {
@@ -25,9 +26,8 @@ import { RiVuejsFill } from "react-icons/ri";
 import { TbBrandReact } from "react-icons/tb";
 // import { BiLogoPostgresql } from "react-icons/bi";
 import { VscVscode } from "react-icons/vsc";
+import TitleSection from "../title-section/TitleSection";
 // import { IoLogoSass } from "react-icons/io5";
-
-import * as motion from "motion/react-client";
 
 const Technologies = () => {
   const technologies = [
@@ -102,9 +102,11 @@ const Technologies = () => {
       <div className="container px-6 mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <div className="bg-lime-400 dark:bg-lime-200 inline-block p-4 border-4 border-black shadow-[8px_8px_0px_0px_#000] mb-6">
-            <h2 className="text-4xl font-black md:text-5xl">TECHS & TOOLS</h2>
-          </div>
+          <TitleSection
+            title="TECHS & TOOLS"
+            bgColor="bg-lime-400 dark:bg-lime-200"
+          />
+
           <p className="max-w-2xl mx-auto text-xl font-bold dark:text-white">
             Tools and technologies I use to bring ideas to life
           </p>
@@ -113,20 +115,12 @@ const Technologies = () => {
         {/* Technologies Grid */}
         <div className="grid grid-cols-3 gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8">
           {technologies.map((tech, index) => (
-            <motion.div
+            <TechnologiesCard
               key={index}
-              className={`${tech.color} p-6 border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[12px_12px_0px_0px_#000] transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 group cursor-pointer`}
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.5 }}
-            >
-              <div className="flex flex-col items-center text-center">
-                <div className="p-3 mb-4 text-white transition-colors bg-black border-2 border-black group-hover:bg-white group-hover:text-black">
-                  {tech.icon}
-                </div>
-                <h3 className="text-sm font-black md:text-base">{tech.name}</h3>
-              </div>
-            </motion.div>
+              name={tech.name}
+              color={tech.color}
+              icon={tech.icon}
+            />
           ))}
         </div>
       </div>

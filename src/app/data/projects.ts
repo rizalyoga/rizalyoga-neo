@@ -164,6 +164,18 @@ export const myProjects = [
     features: ["Authentication & Authorization", "Task Management"],
   },
   {
+    id: "Simple-Kanban-Back-end",
+    cover: "",
+    title: "Simple-Kanban-Back-end",
+    technologies: ["React", "TypeScript", "Tailwind", "SWR", "Fullstack"],
+    description:
+      "Back-end for Simple-Kanban project. Simple-Kanban project is a web application designed to replicate the core functions and features of a Kanban board.",
+    demoUrl: "",
+    githubUrl: "https://github.com/rizalyoga/simple-kanban-be",
+    color: "bg-gray-400 dark:bg-gray-300",
+    features: ["Authentication & Authorization API", "Task Management API"],
+  },
+  {
     id: "Pomodoro-Timer",
     cover: "/assets/portofolio-cover/pomodoro-timer.png",
     title: "Pomodoro-Timer",
@@ -358,7 +370,7 @@ export const myProjects = [
       "Quran Web App allows users to read the Qur'an online, through PC, laptops, or cellphones.",
     demoUrl: "https://quran-rizalyoga.vercel.app/",
     githubUrl: "https://github.com/rizalyoga/quran-app",
-    color: "bg-rose-400 dark:bg-rose-300",
+    color: "bg-orange-400 dark:bg-orange-300",
     features: ["Responsive website"],
   },
   {

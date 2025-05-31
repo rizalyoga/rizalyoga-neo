@@ -5,7 +5,8 @@ import { Mail, Download } from "lucide-react";
 import { FiLinkedin } from "react-icons/fi";
 import { PiGithubLogoBold } from "react-icons/pi";
 import Image from "next/image";
-import Link from "next/link";
+import LinkIconButton from "../buttons/LinkIconButton";
+import LinkStringButton from "../buttons/LinkStringButton";
 
 const HeroSection = () => {
   const [text, setText] = useState("");
@@ -49,7 +50,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className=" w-full bg-yellow-300 dark:bg-yellow-200 p-6 border-4 border-black shadow-[12px_12px_0px_0px_#000]">
+            <div className="w-full bg-yellow-300 dark:bg-yellow-200 shadow-board-description">
               <p className="text-lg font-bold leading-relaxed">
                 Passionate about creating beautiful, functional, and
                 user-friendly web experiences. I love turning ideas into reality
@@ -59,41 +60,43 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="https://drive.google.com/file/d/13ooAoP6iAoM9aCtm1AivANafl9Wb8Lkw/view?usp=drive_link"
-                target="_blank"
-                className="bg-lime-400 text-black px-8 py-4 font-bold text-lg border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 flex items-center gap-2"
-              >
-                <Download size={20} />
-                Download CV
-              </Link>
-              <Link
-                href={"#contact"}
-                className="bg-cyan-400 text-black px-8 py-4 font-bold text-lg border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 flex items-center gap-2"
-              >
-                <Mail size={20} />
-                Contact Me
-              </Link>
+              <LinkStringButton
+                btnTitle="Download CV"
+                bgColor="bg-lime-400 dark:bg-lime-300"
+                textColor="text-black"
+                directUrl="https://drive.google.com/file/d/13ooAoP6iAoM9aCtm1AivANafl9Wb8Lkw/view?usp=drive_link"
+                icon={<Download size={20} />}
+                px="px-8"
+                py="py-4"
+              />
+
+              <LinkStringButton
+                btnTitle="Contact Me"
+                bgColor="bg-cyan-400 dark:bg-cyan-300"
+                textColor="text-black"
+                directUrl="#contact"
+                target="_self"
+                icon={<Mail size={20} />}
+                px="px-8"
+                py="py-4"
+              />
             </div>
 
             {/* Social Links */}
             <div className="flex gap-4">
-              <a
-                href="https://github.com/rizalyoga"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black text-white p-3 border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
-              >
-                <PiGithubLogoBold size={24} />
-              </a>
-              <a
-                href="https://linkedin.com/in/rizalyoga"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-500 text-white p-3 border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
-              >
-                <FiLinkedin size={24} />
-              </a>
+              <LinkIconButton
+                directLink="https://github.com/rizalyoga"
+                bgColor="bg-black"
+                textColor="text-white"
+                icon={<PiGithubLogoBold size={24} />}
+              />
+
+              <LinkIconButton
+                directLink="https://linkedin.com/in/rizalyoga"
+                bgColor="bg-blue-500"
+                textColor="text-white"
+                icon={<FiLinkedin size={24} />}
+              />
             </div>
           </div>
 
