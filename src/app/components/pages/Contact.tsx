@@ -25,7 +25,7 @@ const Contact = () => {
         <div className="grid gap-12 lg:grid-cols-2">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-yellow-300 dark:bg-yellow-400 shadow-board-contact-description">
+            <div className="bg-yellow-400 dark:bg-yellow-300 shadow-board-contact-description">
               <h3 className="mb-6 text-2xl font-black text-black">
                 GET IN TOUCH
               </h3>

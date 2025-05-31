@@ -50,7 +50,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="w-full bg-yellow-300 dark:bg-yellow-200 shadow-board-description">
+            <div className="w-full bg-yellow-400 dark:bg-yellow-300 shadow-board-description">
               <p className="text-lg font-bold leading-relaxed">
                 Passionate about creating beautiful, functional, and
                 user-friendly web experiences. I love turning ideas into reality
