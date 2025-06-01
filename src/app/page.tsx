@@ -5,6 +5,7 @@ import Projects from "./components/pages/Projects";
 import Technologies from "./components/pages/Technologies";
 import ToTopButton from "./components/buttons/ToTopButton";
 import { Toaster } from "react-hot-toast";
+// import AboutMe from "./components/pages/AboutMe";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Toaster />
       <Navigation />
       <HeroSection />
-      <Technologies />
+      {/* <AboutMe /> */}
       <Projects />
+      <Technologies />
       <Contact />
       <ToTopButton />
     </>

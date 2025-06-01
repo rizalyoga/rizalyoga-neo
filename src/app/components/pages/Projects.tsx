@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 transition-colors bg-gray-50 dark:bg-gray-700"
+      className="py-20 transition-colors bg-white dark:bg-[#252839]"
     >
       <div className="container px-6 mx-auto">
         {/* Section Header */}

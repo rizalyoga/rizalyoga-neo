@@ -466,6 +466,7 @@ export const myProjects = [
     color: "bg-gray-400 dark:bg-gray-300",
     features: [
       "Displays a list of movies from TMDB API",
+      "Infinite scroll",
       "Displays details of movie",
     ],
   },

@@ -6,14 +6,14 @@ const Technologies = () => {
   return (
     <section
       id="technologies"
-      className="py-20 transition-colors bg-white dark:bg-[#252839]"
+      className="py-20 transition-colors bg-gray-50 dark:bg-gray-700"
     >
       <div className="container px-6 mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
           <TitleSection
             title="TECHS & TOOLS"
-            bgColor="bg-lime-400 dark:bg-lime-200"
+            bgColor="bg-lime-400 dark:bg-lime-300"
           />
 
           <p className="max-w-2xl mx-auto text-xl font-bold dark:text-white">
