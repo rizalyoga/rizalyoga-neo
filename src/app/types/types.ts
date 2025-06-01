@@ -6,6 +6,7 @@ export interface ProjectInterface {
   description: string;
   demoUrl: string;
   githubUrl: string;
+  videoUrl?: string;
   color: string;
   features?: string[];
 }

@@ -11,6 +11,8 @@ import { myProjects } from "@/app/data/projects";
 import NotFound from "@/app/not-found";
 import LinkStringButton from "@/app/components/buttons/LinkStringButton";
 import CheckBoxFeatures from "@/app/components/buttons/CheckBoxFeatures";
+import VideoDemo from "@/app/components/VideoDemo";
+import clsx from "clsx";
 
 const ProjectDetail = () => {
   const { project_id } = useParams();
@@ -52,9 +54,9 @@ const ProjectDetail = () => {
 
         {/* Project Content */}
         <div className="container px-6 py-12 max-w-screen-md mx-auto">
-          <div className="grid items-start gap-12 ">
+          <div className="grid items-start gap-12">
             {/* Project Image */}
-            <div className="order-2 lg:order-1 ">
+            <div className="order-2 lg:order-1">
               <div className="-mt-1 lg:mt-3 bg-indigo-400 dark:bg-indigo-300 h-full shadow-board-contact-description">
                 <div className="relative w-full h-[300px]">
                   <Image
@@ -126,16 +128,30 @@ const ProjectDetail = () => {
               </div>
 
               {/* Features */}
+              <>
+                <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
+                  Key Features
+                </h3>
+                <div className="bg-slate-100 dark:bg-slate-600 shadow-board-contact-description">
+                  <ul className="space-y-3">
+                    {project?.features.map((feature, index) => (
+                      <CheckBoxFeatures feature={feature} key={index} />
+                    ))}
+                  </ul>
+                </div>
+              </>
+            </div>
+
+            {/* Video Demo */}
+            <div
+              className={clsx(
+                project.videoUrl ? "order-3 lg:order-3 -mt-2" : "hidden"
+              )}
+            >
               <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
-                Key Features
+                Video Demo
               </h3>
-              <div className="bg-slate-100 dark:bg-gray-800 shadow-board-contact-description">
-                <ul className="space-y-3">
-                  {project?.features.map((feature, index) => (
-                    <CheckBoxFeatures feature={feature} key={index} />
-                  ))}
-                </ul>
-              </div>
+              <VideoDemo videoUrl={project.videoUrl} />
             </div>
           </div>
         </div>
