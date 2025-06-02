@@ -58,6 +58,16 @@ const AboutMe = () => {
             <span className="text-orange-600 dark:text-purple-600">GitHub</span>
             .
           </p>
+
+          <p className="text-md md:text-lg font-bold dark:text-black ">
+            Currently, I’m actively building my portfolio and expanding my
+            skills in{" "}
+            <span className="text-orange-600 dark:text-purple-600">
+              Fullstack Development
+            </span>
+            , with the goal of contributing to a solid and growing development
+            team in the tech industry.
+          </p>
         </div>
       </div>
     </section>

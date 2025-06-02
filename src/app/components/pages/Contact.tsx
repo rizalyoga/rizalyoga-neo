@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import TitleSection from "../title-section/TitleSection";
-import ContactTable from "../tables/ContactTable";
+import ContactForm from "../forms/ContactForm";
 
 const Contact = () => {
   return (
@@ -87,7 +87,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <ContactTable />
+          <ContactForm />
         </div>
       </div>
     </section>

@@ -87,7 +87,7 @@ export const myProjects = [
       "Snake and Ladder Math is a learning media in the form of games aimed at helping children with autism learn to count.",
     demoUrl: "https://snake-ladder-efri.vercel.app/",
     githubUrl: "",
-    videoUrl: "",
+    videoUrl: "https://youtu.be/pjBnZPu7ag4",
     color: "bg-green-400 dark:bg-green-300",
     features: [
       "Player management",
@@ -379,7 +379,7 @@ export const myProjects = [
       "My final project from Alterra Bootcamp. Wedding Stories is an e-commerce that helps the wedding organizers in marketing their services online.",
     demoUrl: "https://weddingstories-space.web.app/",
     githubUrl: "https://github.com/rizalyoga/wedding-stories",
-    videoUrl: "",
+    videoUrl: "https://youtu.be/bcLmi0AydOA",
     color: "bg-green-400 dark:bg-green-300",
     features: [
       "Authentication & Authorization",
