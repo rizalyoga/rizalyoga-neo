@@ -15,28 +15,48 @@ const AboutMe = () => {
           />
 
           <h4 className="max-w-2xl mx-auto text-xl font-bold dark:text-white">
-            This is my journey
+            My story, skillset, and career goals in tech
           </h4>
         </div>
-        <div className="bg-white dark:bg-slate-200  board-description shadow-board-contact-description">
-          <p className="text-md md:text-lg font-bold dark:text-black text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsa
-            quisquam quos quo delectus soluta atque tempora, debitis rem
-            similique ut fugiat praesentium facere fugit eum accusantium
-            aspernatur error Lorem, ipsum. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Assumenda totam rerum, atque harum
-            nemo ea vel laborum ipsam et tempore, recusandae nobis sequi maiores
-            quo dolorem. Ullam aut maiores adipisci. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Est natus quidem reiciendis. Modi,
-            quisquam, ad, officiis maxime facere sed magnam harum distinctio
-            laboriosam et id cum odio hic quaerat deserunt. Facilis nisi ullam
-            eligendi in provident dignissimos quasi sint culpa voluptas fuga
-            adipisci porro, voluptatibus tenetur harum placeat amet enim? Qui ea
-            corrupti commodi quod reiciendis magnam non, a cumque. Ut, repellat
-            labore quis, obcaecati voluptates veritatis totam a numquam eius ea
-            laboriosam soluta! Officia repellat officiis explicabo neque, porro
-            vero minima non, rerum accusamus ratione similique eveniet debitis
-            aliquam!
+        <div className="bg-indigo-50 dark:bg-slate-200  board-description shadow-board-contact-description text-justify gap-4 flex flex-col">
+          <p className="text-md md:text-lg font-bold dark:text-black ">
+            Hello! I’m{" "}
+            <span className="text-orange-600 dark:text-purple-600">
+              Rizalyoga
+            </span>
+            , a graduate with a Bachelor&apos;s degree in Informatics from
+            Universitas Muhammadiyah Malang. Although my academic background
+            focused on computer networking, I discovered a strong passion for
+            web development after graduating in 2021.
+          </p>
+          <p className="text-md md:text-lg font-bold dark:text-black ">
+            To deepen my skills in this field, I joined a{" "}
+            <span className="text-orange-600 dark:text-purple-600">
+              Front-End Developer bootcamp
+            </span>{" "}
+            at Alterra Academy and successfully completed it in 2022. After
+            that, I worked as a{" "}
+            <span className="text-orange-600 dark:text-purple-600">
+              laptop technician
+            </span>{" "}
+            for a year before deciding to fully shift my focus back to web
+            development.
+          </p>
+          <p className="text-md md:text-lg font-bold dark:text-black ">
+            Since then, I’ve worked on several{" "}
+            <span className="text-orange-600 dark:text-purple-600">
+              freelance projects
+            </span>
+            , ranging from building websites and web-based games to developing
+            mobile applications using React Native. I’m experienced in working
+            with modern technologies such as{" "}
+            <span className="text-orange-600 dark:text-purple-600">
+              {" "}
+              Next.js, React, Tailwind CSS, TypeScript, Express.js, Prisma, Git
+            </span>{" "}
+            and{" "}
+            <span className="text-orange-600 dark:text-purple-600">GitHub</span>
+            .
           </p>
         </div>
       </div>

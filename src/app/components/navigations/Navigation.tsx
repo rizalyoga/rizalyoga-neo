@@ -23,16 +23,22 @@ const Navigation = () => {
               HOME
             </Link>
             <Link
-              href={"#technologies"}
-              className="font-bold transition-colors hover:text-cyan-500 dark:text-white"
+              href={"#about"}
+              className="font-bold transition-colors hover:text-orange-500 dark:text-white"
             >
-              TECH
+              ABOUT
             </Link>
             <Link
               href={"#projects"}
               className="font-bold transition-colors hover:text-emerald-500 dark:text-white"
             >
               PROJECTS
+            </Link>
+            <Link
+              href={"#technologies"}
+              className="font-bold transition-colors hover:text-cyan-500 dark:text-white"
+            >
+              TECH
             </Link>
             <Link
               href={"#contact"}
@@ -67,11 +73,11 @@ const Navigation = () => {
                 HOME
               </Link>
               <Link
-                href={"#technologies"}
-                className="p-2 font-bold text-left transition-colors border-2 border-black hover:text-cyan-500 hover:bg-white dark:hover:bg-white"
+                href={"#about"}
+                className="p-2 font-bold text-left transition-colors border-2 border-black hover:text-orange-500 hover:bg-white dark:hover:bg-white"
                 onClick={() => setIsOpen((open) => !open)}
               >
-                TECH
+                ABOUT
               </Link>
               <Link
                 href={"#projects"}
@@ -80,6 +86,14 @@ const Navigation = () => {
               >
                 PROJECTS
               </Link>
+              <Link
+                href={"#technologies"}
+                className="p-2 font-bold text-left transition-colors border-2 border-black hover:text-cyan-500 hover:bg-white dark:hover:bg-white"
+                onClick={() => setIsOpen((open) => !open)}
+              >
+                TECH
+              </Link>
+
               <Link
                 href={"#contact"}
                 className="p-2 font-bold text-left transition-colors border-2 border-black hover:text-violet-500 hover:bg-white dark:hover:bg-white"
