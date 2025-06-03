@@ -93,7 +93,9 @@ const ContactForm = () => {
 
   return (
     <div className="bg-pink-400 dark:bg-pink-300 shadow-board-contact-description">
-      <h3 className="mb-6 text-2xl font-black text-black">SEND MESSAGE</h3>
+      <h3 className="mb-6 text-xl md:text-2xl font-black text-black">
+        SEND MESSAGE
+      </h3>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div className="grid gap-4 md:grid-cols-2">
@@ -175,7 +177,7 @@ const ContactForm = () => {
           type="submit"
           disabled={isSubmitting}
           className={clsx(
-            "w-full bg-yellow-400 dark:bg-yellow-300 text-black px-6 py-4 font-bold text-lg border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 flex items-center justify-center gap-2",
+            "w-full bg-yellow-400 dark:bg-yellow-300 text-black px-6 py-4 font-bold text-base md:text-lg border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 flex items-center justify-center gap-2",
             isSubmitting
               ? "!bg-gray-200 dark:!bg-gray-300 shadow-none cursor-wait pointer-events-none"
               : ""

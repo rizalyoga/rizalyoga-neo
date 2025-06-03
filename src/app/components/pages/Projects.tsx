@@ -35,7 +35,7 @@ const Projects = () => {
             title="PROJECTS"
             bgColor="bg-pink-400 dark:bg-pink-300"
           />
-          <p className="max-w-2xl mx-auto text-xl font-bold text-black dark:text-white">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl font-bold text-black dark:text-white">
             A showcase of my recent work and side projects
           </p>
         </div>
@@ -60,7 +60,7 @@ const Projects = () => {
         {/* View All Projects Button */}
         <div className="text-center">
           <button
-            className="bg-yellow-400 dark:bg-yellow-300 text-black px-8 py-4 font-bold text-lg border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
+            className="bg-yellow-400 dark:bg-yellow-300 text-black px-8 py-4 font-bold text-base md:text-lg border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
             onClick={showAllProjectHandler}
           >
             {!isShowAll ? " VIEW ALL PROJECTS" : "HIDE PROJECTS"}

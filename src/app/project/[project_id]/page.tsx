@@ -44,7 +44,7 @@ const ProjectDetail = () => {
           <div className="mx-auto max-w-screen-2xl">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 bg-pink-400 dark:bg-pink-300 text-black px-4 py-2 font-bold lg:mx-6 border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
+              className="text-sm md:text-base inline-flex items-center gap-2 bg-pink-400 dark:bg-pink-300 text-black px-4 py-2 font-bold lg:mx-6 border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
             >
               <ArrowLeft size={20} />
               Back to Projects
@@ -77,12 +77,12 @@ const ProjectDetail = () => {
 
             {/* Project Info */}
             <div className="order-1 lg:order-2">
-              <h1 className="mb-6 text-5xl font-black leading-tight text-black dark:text-white">
+              <h1 className="mb-6 text-3xl md:text-5xl font-black leading-tight text-black dark:text-white">
                 {project?.title}
               </h1>
 
               <div className="bg-yellow-300 dark:bg-yellow-200 mb-8 shadow-board-contact-description">
-                <p className="text-lg font-bold leading-relaxed text-black">
+                <p className="text-base md:text-lg font-bold leading-relaxed text-black">
                   {project?.description}
                 </p>
               </div>
@@ -112,14 +112,14 @@ const ProjectDetail = () => {
 
               {/* Technologies */}
               <div className="mb-8">
-                <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
+                <h3 className="mb-4 text-xl md:text-2xl font-black text-black dark:text-white">
                   Technologies Used
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {project?.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="bg-cyan-400 dark:bg-cyan-300 text-black px-4 py-2 font-bold border-2 border-black shadow-[4px_4px_0px_0px_#000]"
+                      className="text-sm md:text-base bg-cyan-400 dark:bg-cyan-300 text-black px-4 py-2 font-bold border-2 border-black shadow-[4px_4px_0px_0px_#000]"
                     >
                       {tech}
                     </span>
@@ -129,7 +129,7 @@ const ProjectDetail = () => {
 
               {/* Features */}
               <>
-                <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
+                <h3 className="mb-4 text-xl md:text-2xl font-black text-black dark:text-white">
                   Key Features
                 </h3>
                 <div className="bg-slate-100 dark:bg-slate-600 shadow-board-contact-description">
@@ -148,7 +148,7 @@ const ProjectDetail = () => {
                 project.videoUrl ? "order-3 lg:order-3 -mt-2" : "hidden"
               )}
             >
-              <h3 className="mb-4 text-2xl font-black text-black dark:text-white">
+              <h3 className="mb-4 text-xl md:text-2xl font-black text-black dark:text-white">
                 Video Demo
               </h3>
               <VideoDemo videoUrl={project.videoUrl} />

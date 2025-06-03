@@ -174,7 +174,7 @@ export const myProjects = [
       "Simple-Kanban project is a web application designed to replicate the core functions and features of a Kanban board.",
     demoUrl: "https://simple-canban-clone.vercel.app/",
     githubUrl: "https://github.com/rizalyoga/simple-canban-clone",
-    videoUrl: "",
+    videoUrl: "https://youtu.be/3r12TI0wZeA",
     color: "bg-sky-400 dark:bg-sky-300",
     features: ["Authentication & Authorization", "Task Management"],
   },

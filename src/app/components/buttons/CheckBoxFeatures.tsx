@@ -13,7 +13,9 @@ const CheckBoxFeatures = ({ feature }: { feature: string }) => {
           defaultChecked
         />
       </label>
-      <span className="font-bold text-black dark:text-white">{feature}</span>
+      <span className="font-bold text-black dark:text-white text-base">
+        {feature}
+      </span>
     </li>
   );
 };

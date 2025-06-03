@@ -51,7 +51,7 @@ const HeroSection = () => {
             </div>
 
             <div className="w-full bg-yellow-400 dark:bg-yellow-300 shadow-board-description">
-              <p className="text-lg font-bold leading-relaxed">
+              <p className="text-base md:text-lg font-bold leading-relaxed">
                 Passionate about creating beautiful, functional, and
                 user-friendly web experiences. I love turning ideas into reality
                 with clean code and modern design.
@@ -101,7 +101,7 @@ const HeroSection = () => {
           </div>
 
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-start lg:ml-32 ">
+          <div className=" hidden md:flex justify-center  lg:justify-start lg:ml-32 ">
             <div className="bg-pink-400 p-8 border-4 border-black shadow-[16px_16px_0px_0px_#000] transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <div className="relative w-[20rem] md:w-[24rem] h-[20rem] md:h-[24rem] bg-[#FFD701]">
                 <Image

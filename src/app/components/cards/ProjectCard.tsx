@@ -36,7 +36,9 @@ const ProjectCard = ({
 
       {/* Project Content */}
       <div className="p-6">
-        <h3 className="mb-3 text-2xl font-black text-black">{title}</h3>
+        <h3 className="mb-3 text-xl md:text-2xl font-black text-black">
+          {title}
+        </h3>
         <p className="mb-4 font-bold leading-relaxed text-black line-clamp-2">
           {description}
         </p>
@@ -57,7 +59,7 @@ const ProjectCard = ({
         <div className="flex gap-3">
           <Link
             href={`/project/${id.replaceAll(" ", "-")}`}
-            className="flex-1 bg-white text-black px-4 py-3 font-bold border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 text-center hover:bg-gray-700 hover:text-white"
+            className="flex-1 text-sm md:text-base  bg-white text-black px-4 py-3 font-bold border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 text-center hover:bg-gray-700 hover:text-white"
           >
             View Details
           </Link>

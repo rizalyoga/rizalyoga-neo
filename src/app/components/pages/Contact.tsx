@@ -1,6 +1,7 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import TitleSection from "../title-section/TitleSection";
 import ContactForm from "../forms/ContactForm";
+import { FiLinkedin } from "react-icons/fi";
 
 const Contact = () => {
   return (
@@ -16,20 +17,20 @@ const Contact = () => {
             bgColor="bg-cyan-400 dark:bg-cyan-300"
           />
 
-          <p className="max-w-2xl mx-auto text-xl font-bold text-black dark:text-white">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl font-bold text-black dark:text-white">
             Let&apos;s work together! Drop me a message and let&apos;s create
             something amazing.
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-12 grid-cols-1 lg:grid-cols-2">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-yellow-400 dark:bg-yellow-300 shadow-board-contact-description">
-              <h3 className="mb-6 text-2xl font-black text-black">
+              <h3 className="mb-6 text-xl md:text-2xl font-black text-black">
                 GET IN TOUCH
               </h3>
-              <p className="mb-6 text-lg font-bold leading-relaxed text-black">
+              <p className="mb-6 text-base md:text-lg font-bold leading-relaxed text-black">
                 Ready to start your next project? I&apos;m always excited to
                 work on new challenges and collaborate with new people.
               </p>
@@ -41,7 +42,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-bold text-black">Email</div>
-                    <div className="text-lg text-black">
+                    <div className="text-sm md:text-lg text-black">
                       ach.rizal.yogaswara@gmail.com
                     </div>
                   </div>
@@ -49,11 +50,13 @@ const Contact = () => {
 
                 <div className="flex items-center gap-4">
                   <div className="p-3 text-white bg-black border-2 border-black">
-                    <Phone size={24} />
+                    <FiLinkedin size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-black">Phone</div>
-                    <div className="text-lg text-black">+62 812 2882 1971</div>
+                    <div className="font-bold text-black">Linkedin</div>
+                    <div className="text-sm md:text-lg text-black">
+                      @rizalyoga
+                    </div>
                   </div>
                 </div>
 
@@ -63,7 +66,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-bold text-black">Location</div>
-                    <div className="text-lg text-black">
+                    <div className="text-sm md:text-lg text-black">
                       Mojokerto, Indonesia
                     </div>
                   </div>
@@ -76,10 +79,10 @@ const Contact = () => {
               <div className="flex items-center gap-4">
                 <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
                 <div>
-                  <div className="text-xl font-black text-black">
+                  <div className="text-lg md:text-xl font-black text-black">
                     AVAILABLE FOR WORK
                   </div>
-                  <div className="font-bold text-black">
+                  <div className="font-bold text-black text-sm md:text-base">
                     Currently accepting new projects
                   </div>
                 </div>

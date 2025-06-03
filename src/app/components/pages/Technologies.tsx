@@ -16,7 +16,7 @@ const Technologies = () => {
             bgColor="bg-lime-400 dark:bg-lime-300"
           />
 
-          <p className="max-w-2xl mx-auto text-xl font-bold dark:text-white">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl font-bold dark:text-white">
             Tools and technologies I use to bring ideas to life
           </p>
         </div>

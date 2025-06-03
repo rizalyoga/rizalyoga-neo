@@ -23,7 +23,7 @@ const TechnologiesCard = ({
         <div className="p-3 mb-4 text-white transition-colors bg-black border-2 border-black group-hover:bg-white group-hover:text-black">
           {icon}
         </div>
-        <h3 className="text-sm font-black md:text-base">{name}</h3>
+        <h3 className="text-xs ms:text-sm font-black md:text-base">{name}</h3>
       </div>
     </motion.div>
   );
