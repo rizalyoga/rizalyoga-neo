@@ -20,10 +20,10 @@ const TechnologiesCard = ({
       viewport={{ once: true, amount: 0.5 }}
     >
       <div className="flex flex-col items-center text-center">
-        <div className="p-3 mb-4 text-white transition-colors bg-black border-2 border-black group-hover:bg-white group-hover:text-black">
+        <div className="p-2 md:p-3 mb-0 md:mb-4 text-white transition-colors bg-black border-2 border-black group-hover:bg-white group-hover:text-black">
           {icon}
         </div>
-        <h3 className="text-xs ms:text-sm font-black md:text-base">{name}</h3>
+        <h3 className="hidden md:block font-black md:text-base">{name}</h3>
       </div>
     </motion.div>
   );

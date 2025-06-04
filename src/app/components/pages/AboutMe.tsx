@@ -7,7 +7,7 @@ const AboutMe = () => {
       id="about"
       className="py-20 transition-colors bg-gray-50 dark:bg-gray-700"
     >
-      <div className="max-w-screen-md lg:max-w-screen-xl px-6 mx-auto">
+      <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl px-6 mx-auto">
         <div className="mb-14 text-center">
           <TitleSection
             title="ABOUT ME"

@@ -44,7 +44,7 @@ const ProjectCard = ({
         </p>
 
         {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="hidden sm:flex flex-wrap gap-2 mb-6">
           {technologies?.map((tech, techIndex) => (
             <span
               key={techIndex}
