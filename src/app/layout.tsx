@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-
 import "./globals.css";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import Footer from "./components/navigations/Footer";
 import BProgressBar from "./components/BProgressBar";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],// });
+import ToTopButton from "./components/buttons/ToTopButton";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,11 +32,11 @@ export const metadata: Metadata = {
     "website",
   ],
   openGraph: {
-    title: "achmad rizal yogaswara — software engineer",
+    title: "achmad rizal yogaswara — web developer",
     description: "My personal website to share my projects.",
     url: "https://rizalyoga.vercel.app",
     type: "website",
-    siteName: "achmad rizal yogaswara — software engineer",
+    siteName: "achmad rizal yogaswara — web developer",
     images: [
       {
         url: "https://raw.githubusercontent.com/rizalyoga/next-portofolio/main/public/assets/card-seo/card-seo.png",
@@ -48,7 +44,7 @@ export const metadata: Metadata = {
           "https://raw.githubusercontent.com/rizalyoga/next-portofolio/main/public/assets/card-seo/card-seo.png",
         width: 1200,
         height: 630,
-        alt: "achmad rizal yogaswara — software engineer",
+        alt: "achmad rizal yogaswara — web developer",
         type: "image/png",
       },
     ],
@@ -56,12 +52,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@rizalyoga",
-    title: "achmad rizal yogaswara — software engineer",
+    title: "achmad rizal yogaswara —  ",
     description: "My personal website to share my projects.",
     creator: "@rizalyoga",
     images: {
       url: "https://raw.githubusercontent.com/rizalyoga/next-portofolio/main/public/assets/card-seo/card-seo.png",
-      alt: "achmad rizal yogaswara — software engineer",
+      alt: "achmad rizal yogaswara — web developer",
       width: 1200,
       height: 630,
       type: "image/png",
@@ -81,6 +77,7 @@ export default function RootLayout({
         <body>
           <BProgressBar>{children}</BProgressBar>
           <Footer />
+          <ToTopButton />
         </body>
       </ThemeProvider>
     </html>

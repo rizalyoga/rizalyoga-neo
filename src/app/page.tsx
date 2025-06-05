@@ -3,7 +3,6 @@ import Contact from "./components/pages/Contact";
 import HeroSection from "./components/pages/Hero";
 import Projects from "./components/pages/Projects";
 import Technologies from "./components/pages/Technologies";
-import ToTopButton from "./components/buttons/ToTopButton";
 import { Toaster } from "react-hot-toast";
 import AboutMe from "./components/pages/AboutMe";
 
@@ -17,7 +16,6 @@ export default function Home() {
       <Projects />
       <Technologies />
       <Contact />
-      <ToTopButton />
     </>
   );
 }

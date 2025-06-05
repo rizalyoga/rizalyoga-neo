@@ -1,33 +1,12 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import { Mail, Download } from "lucide-react";
 import { FiLinkedin } from "react-icons/fi";
 import { PiGithubLogoBold } from "react-icons/pi";
 import Image from "next/image";
 import LinkIconButton from "../buttons/LinkIconButton";
 import LinkStringButton from "../buttons/LinkStringButton";
+import TextAnimationHero from "../TextAnimationHero";
 
 const HeroSection = () => {
-  const [text, setText] = useState("");
-  const fullText = "Frontend Developer";
-  const [isTyping, setIsTyping] = useState(true);
-
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (index < fullText.length) {
-        setText(fullText.slice(0, index + 1));
-        index++;
-      } else {
-        setIsTyping(false);
-        clearInterval(timer);
-      }
-    }, 100);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section
       id="hero"
@@ -44,10 +23,7 @@ const HeroSection = () => {
               <h1 className="mb-4 text-5xl font-black leading-tight md:text-7xl dark:text-white">
                 Rizalyoga
               </h1>
-              <div className="mb-6 text-3xl font-bold text-pink-500 md:text-4xl">
-                {text}
-                {isTyping && <span className="animate-pulse">|</span>}
-              </div>
+              <TextAnimationHero />
             </div>
 
             <div className="w-full bg-yellow-400 dark:bg-yellow-300 shadow-board-description">

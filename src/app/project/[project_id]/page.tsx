@@ -1,8 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useParams } from "next/navigation";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import SEO from "@/app/components/SEO/SEO";
 import Image from "next/image";
@@ -14,15 +10,18 @@ import CheckBoxFeatures from "@/app/components/buttons/CheckBoxFeatures";
 import VideoDemo from "@/app/components/VideoDemo";
 import clsx from "clsx";
 
-const ProjectDetail = () => {
-  const { project_id } = useParams();
-  const pathname = usePathname();
+type ParamsType = Promise<{
+  project_id: string;
+}>;
+
+const ProjectDetail = async ({ params }: { params: ParamsType }) => {
+  const { project_id }: { project_id: string } = await params;
   const project = myProjects.find(
     (project) => (project.id.replaceAll(" ", "-") as string) == project_id
   );
 
   // Generate current URL for SEO
-  const currentUrl = `${process.env.NEXT_PUBLIC_BASE_URL}${pathname}`;
+  const currentUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/project/${project_id}`;
 
   if (!project) {
     return <NotFound />;
