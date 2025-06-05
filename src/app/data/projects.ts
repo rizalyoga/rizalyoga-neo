@@ -1,7 +1,7 @@
 export const myProjects = [
   {
     id: "Mindmap-Autisme",
-    cover: "/assets/portofolio-cover/mindmap-autisme.png",
+    cover: "/assets/portofolio-cover/mindmap-autisme.webp",
     title: "Mindmap-Autisme",
     technologies: [
       "Next-14",
@@ -28,7 +28,7 @@ export const myProjects = [
   },
   {
     id: "Parbicara",
-    cover: "/assets/portofolio-cover/parbicara.png",
+    cover: "/assets/portofolio-cover/parbicara.webp",
     title: "Parbicara",
     technologies: [
       "Next",
@@ -54,7 +54,7 @@ export const myProjects = [
   },
   {
     id: "Job-Track",
-    cover: "/assets/portofolio-cover/job-track-cover.png",
+    cover: "/assets/portofolio-cover/job-track-cover.webp",
     title: "Job-Track",
     technologies: [
       "React-19",
@@ -80,7 +80,7 @@ export const myProjects = [
   },
   {
     id: "Snake and Ladder Math",
-    cover: "/assets/portofolio-cover/snake-ladder-efri.png",
+    cover: "/assets/portofolio-cover/snake-ladder-efri.webp",
     title: "Snake and Ladder Math",
     technologies: ["Next js", "TypeScript", "Tailwind", "Daisy UI", "PWA"],
     description:
@@ -99,7 +99,7 @@ export const myProjects = [
   },
   {
     id: "Graha Sarjaya Solusindo",
-    cover: "/assets/portofolio-cover/GSID.png",
+    cover: "/assets/portofolio-cover/GSID.webp",
     title: "Graha Sarjaya Solusindo",
     technologies: [
       "Next js",
@@ -117,7 +117,7 @@ export const myProjects = [
   },
   {
     id: "Monopoly-SLB",
-    cover: "/assets/portofolio-cover/monopoly.png",
+    cover: "/assets/portofolio-cover/monopoly.webp",
     title: "Monopoly-SLB",
     technologies: [
       "Next js",
@@ -143,7 +143,7 @@ export const myProjects = [
   },
   {
     id: "Shelter.Aja",
-    cover: "/assets/portofolio-cover/shelter-aja.png",
+    cover: "/assets/portofolio-cover/shelter-aja.webp",
     title: "Shelter.Aja",
     technologies: ["Next js", "TypeScript", "Tailwind"],
     description: "Landing page website for Shelter.aja.",
@@ -155,7 +155,7 @@ export const myProjects = [
   },
   {
     id: "Athalia's Blessing WEB",
-    cover: "/assets/portofolio-cover/athalias-blessing.png",
+    cover: "/assets/portofolio-cover/athalias-blessing.webp",
     title: "Athalia's Blessing WEB",
     technologies: ["Next", "Typescript", "Tailwind", "React Icons", "Lottie"],
     description: "Company Profile Website for Athalia's Blessing.",
@@ -167,7 +167,7 @@ export const myProjects = [
   },
   {
     id: "Simple-Kanban",
-    cover: "/assets/portofolio-cover/simple-kanban.png",
+    cover: "/assets/portofolio-cover/simple-kanban.webp",
     title: "Simple-Kanban",
     technologies: ["React", "TypeScript", "Tailwind", "SWR", "Fullstack"],
     description:
@@ -193,7 +193,7 @@ export const myProjects = [
   },
   {
     id: "Pomodoro-Timer",
-    cover: "/assets/portofolio-cover/pomodoro-timer.png",
+    cover: "/assets/portofolio-cover/pomodoro-timer.webp",
     title: "Pomodoro-Timer",
     technologies: ["React", "TypeScript", "Tailwind", "bun"],
     description:
@@ -206,7 +206,7 @@ export const myProjects = [
   },
   {
     id: "Shopping-notes",
-    cover: "/assets/portofolio-cover/shopping-notes.png",
+    cover: "/assets/portofolio-cover/shopping-notes.webp",
     title: "Shopping-notes",
     technologies: ["React Native", "TypeScript", "Expo", "Native wind"],
     description:
@@ -220,7 +220,7 @@ export const myProjects = [
   },
   {
     id: "Kalkulator Rupiah",
-    cover: "/assets/portofolio-cover/kalkulator-rupiah.png",
+    cover: "/assets/portofolio-cover/kalkulator-rupiah.webp",
     title: "Kalkulator Rupiah",
     technologies: ["React", "TypeScript", "PWA"],
     description:
@@ -233,7 +233,7 @@ export const myProjects = [
   },
   {
     id: "CatatanKu",
-    cover: "/assets/portofolio-cover/CatatanKu.png",
+    cover: "/assets/portofolio-cover/CatatanKu.webp",
     title: "CatatanKu",
     technologies: [
       "Next",
@@ -258,7 +258,7 @@ export const myProjects = [
   },
   {
     id: "Dashboard-KIT",
-    cover: "/assets/portofolio-cover/dashboard-kit.png",
+    cover: "/assets/portofolio-cover/dashboard-kit.webp",
     title: "Dashboard-KIT",
     technologies: ["React", "TypeScript", "Tailwind", "Re-Chart", "Vite"],
     description: "Dashboard-KIT is a simple dashboard template.",
@@ -274,7 +274,7 @@ export const myProjects = [
   },
   {
     id: "Daster Bunda Pasuruan",
-    cover: "/assets/portofolio-cover/daster-bunda.png",
+    cover: "/assets/portofolio-cover/daster-bunda.webp",
     title: "Daster Bunda Pasuruan",
     technologies: ["HTML", "CSS", "Javascript"],
     description: "A landing Page to help sales of daster online.",
@@ -286,7 +286,7 @@ export const myProjects = [
   },
   {
     id: "Panduan Mesin Cuci WEB",
-    cover: "/assets/portofolio-cover/panduan-mesin-cuci.png",
+    cover: "/assets/portofolio-cover/panduan-mesin-cuci.webp",
     title: "Panduan Mesin Cuci WEB",
     technologies: ["React", "TypeScript", "Tailwind"],
     description:
@@ -299,7 +299,7 @@ export const myProjects = [
   },
   {
     id: "Rizalyoga web",
-    cover: "/assets/portofolio-cover/rizalyoga.png",
+    cover: "/assets/portofolio-cover/rizalyoga.webp",
     title: "Rizalyoga web",
     technologies: ["Next", "TypeScript", "SASS", "EmailJS"],
     description: "Just my personal web.",
@@ -311,7 +311,7 @@ export const myProjects = [
   },
   {
     id: "Gund-Arm.Inc",
-    cover: "/assets/portofolio-cover/gund-arm.png",
+    cover: "/assets/portofolio-cover/gund-arm.webp",
     title: "Gund-Arm.Inc",
     technologies: [
       "React",
@@ -348,7 +348,7 @@ export const myProjects = [
   },
   {
     id: "Anime War",
-    cover: "/assets/portofolio-cover/anime-war.png",
+    cover: "/assets/portofolio-cover/anime-war.webp",
     title: "Anime War",
     technologies: ["Next", "TypeScript", "ISR", "SSR", "CSR", "CSS"],
     description:
@@ -365,7 +365,7 @@ export const myProjects = [
   },
   {
     id: "Wedding Stories",
-    cover: "/assets/portofolio-cover/wedding-stories.png",
+    cover: "/assets/portofolio-cover/wedding-stories.webp",
     title: "Wedding Stories",
     technologies: [
       "React",
@@ -391,7 +391,7 @@ export const myProjects = [
   },
   {
     id: "Quran App",
-    cover: "/assets/portofolio-cover/quran-app.png",
+    cover: "/assets/portofolio-cover/quran-app.webp",
     title: "Quran App",
     technologies: ["Next", "TypeScript", "CSS", "React Icons", "nProgress"],
     description:
@@ -404,7 +404,7 @@ export const myProjects = [
   },
   {
     id: "Poekmon Database",
-    cover: "/assets/portofolio-cover/pokemon-light.png",
+    cover: "/assets/portofolio-cover/pokemon-light.webp",
     title: "Poekmon Database",
     technologies: [
       "React",
@@ -428,7 +428,7 @@ export const myProjects = [
   },
   {
     id: "Todo List App",
-    cover: "/assets/portofolio-cover/todo-list.png",
+    cover: "/assets/portofolio-cover/todo-list.webp",
     title: "Todo List App",
     technologies: [
       "React",
@@ -448,7 +448,7 @@ export const myProjects = [
   },
   {
     id: "Movie List App",
-    cover: "/assets/portofolio-cover/movie-list.png",
+    cover: "/assets/portofolio-cover/movie-list.webp",
     title: "Movie List App",
     technologies: [
       "React",
@@ -472,7 +472,7 @@ export const myProjects = [
   },
   {
     id: "Vue ecommerce catalog",
-    cover: "/assets/portofolio-cover/vue-ecommerce.png",
+    cover: "/assets/portofolio-cover/vue-ecommerce.webp",
     title: "Vue ecommerce catalog",
     technologies: ["Vue 3", "Vuex", "CSS", "Javascript"],
     description:
@@ -485,7 +485,7 @@ export const myProjects = [
   },
   {
     id: "My Personal Notes",
-    cover: "/assets/portofolio-cover/notes-app.png",
+    cover: "/assets/portofolio-cover/notes-app.webp",
     title: "My Personal Notes",
     technologies: ["React", "Javasript", "CSS", "PWA"],
     description:
@@ -498,7 +498,7 @@ export const myProjects = [
   },
   {
     id: "Quote Generator",
-    cover: "/assets/portofolio-cover/quote-generator.png",
+    cover: "/assets/portofolio-cover/quote-generator.webp",
     title: "Quote Generator",
     technologies: ["React", "TypeScript", "Chart.js", "Weather API"],
     description: " - ",
