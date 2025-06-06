@@ -3,8 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import Footer from "./components/navigations/Footer";
-import BProgressBar from "./components/BProgressBar";
 import ToTopButton from "./components/buttons/ToTopButton";
+import BProgressBar from "./components/BProgressBar";
 
 const poppins = Poppins({
   subsets: ["latin"],

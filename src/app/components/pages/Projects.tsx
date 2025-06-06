@@ -7,12 +7,25 @@ import { ProjectInterface } from "@/app/types/types";
 import TitleSection from "../title-section/TitleSection";
 
 const Projects = () => {
-  const [isShowAll, setIsShowAll] = useState(false);
+  const [isShowAll, setIsShowAll] = useState(() => {
+    // Baca nilai awal dari sessionStorage
+    if (typeof window !== "undefined") {
+      return sessionStorage.getItem("showAllProjects") === "true";
+    }
+    return false;
+  });
   const [listProject, setListProject] = useState<ProjectInterface[]>([]);
   const sliceProject = myProjects.slice(0, 6);
 
   const showAllProjectHandler = () => {
-    setIsShowAll((showAll) => !showAll);
+    setIsShowAll((showAll) => {
+      const newValue = !showAll;
+      // Simpan ke sessionStorage
+      if (typeof window !== "undefined") {
+        sessionStorage.setItem("showAllProjects", newValue.toString());
+      }
+      return newValue;
+    });
   };
 
   useEffect(() => {

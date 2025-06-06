@@ -1,6 +1,4 @@
-import Link from "next/link";
-import { ArrowLeft, ExternalLink } from "lucide-react";
-import SEO from "@/app/components/SEO/SEO";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { PiGithubLogoBold } from "react-icons/pi";
 import { myProjects } from "@/app/data/projects";
@@ -9,6 +7,7 @@ import LinkStringButton from "@/app/components/buttons/LinkStringButton";
 import CheckBoxFeatures from "@/app/components/buttons/CheckBoxFeatures";
 import VideoDemo from "@/app/components/VideoDemo";
 import clsx from "clsx";
+import DetailNavigation from "@/app/components/navigations/DetailNavigation";
 
 type ParamsType = Promise<{
   project_id: string;
@@ -20,37 +19,14 @@ const ProjectDetail = async ({ params }: { params: ParamsType }) => {
     (project) => (project.id.replaceAll(" ", "-") as string) == project_id
   );
 
-  // Generate current URL for SEO
-  const currentUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/project/${project_id}`;
-
   if (!project) {
     return <NotFound />;
   }
 
   return (
     <>
-      <SEO
-        title={`${project?.title} - Portfolio`}
-        description={project?.description as string}
-        image={project?.cover}
-        url={currentUrl}
-        type="article"
-      />
-
       <div className="min-h-screen transition-colors bg-white dark:bg-[#252839]">
-        {/* Navigation */}
-        <nav className="p-6 border-b-4 border-black dark:border-white ">
-          <div className="mx-auto max-w-screen-2xl">
-            <Link
-              href="/"
-              className="text-sm md:text-base inline-flex items-center gap-2 bg-pink-400 dark:bg-pink-300 text-black px-4 py-2 font-bold lg:mx-6 border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
-            >
-              <ArrowLeft size={20} />
-              Back to Projects
-            </Link>
-          </div>
-        </nav>
-
+        <DetailNavigation />
         {/* Project Content */}
         <div className="container px-6 py-12 max-w-screen-md mx-auto">
           <div className="grid items-start gap-12">
