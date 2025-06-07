@@ -75,7 +75,10 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable}`}>
       <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
         <body>
-          <BProgressBar>{children}</BProgressBar>
+          <BProgressBar>
+            <></>
+          </BProgressBar>
+          {children}
           <Footer />
           <ToTopButton />
         </body>
