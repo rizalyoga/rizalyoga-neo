@@ -1,5 +1,24 @@
 export const myProjects = [
   {
+    id: "Simetri-studio",
+    cover: "/assets/portofolio-cover/simetri-studio.webp",
+    title: "SIMETRI Studio",
+    technologies: [
+      "Next js",
+      "TypeScript",
+      "Tailwind v4",
+      "Lucid Icons",
+      "Framer-motion",
+      "Embla-carousel-react",
+    ],
+    description: "Company Profile Website for SIMETRI Studio.",
+    demoUrl: "https://www.fazagroup.id/",
+    githubUrl: "",
+    videoUrl: "",
+    color: "bg-pink-400 dark:bg-pink-300",
+    features: ["Responsive", "SPA"],
+  },
+  {
     id: "Mindmap-Autisme",
     cover: "/assets/portofolio-cover/mindmap-autisme.webp",
     title: "Mindmap-Autisme",

@@ -18,7 +18,7 @@ const ProjectCard = ({
 }: ProjectCardPropsInterface) => {
   return (
     <div
-      className={`${color} border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[12px_12px_0px_0px_#000] transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 group overflow-hidden`}
+      className={`${color} flex flex-col border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[12px_12px_0px_0px_#000] transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 group overflow-hidden`}
     >
       {/* Project Image */}
       <div className="relative h-48 overflow-hidden">
@@ -35,7 +35,7 @@ const ProjectCard = ({
       </div>
 
       {/* Project Content */}
-      <div className="p-6">
+      <div className="flex flex-col flex-grow p-6">
         <h3 className="mb-3 text-xl md:text-2xl font-black text-black">
           {title}
         </h3>
@@ -56,7 +56,7 @@ const ProjectCard = ({
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-auto">
           <Link
             href={`/project/${id.replaceAll(" ", "-")}`}
             className="flex-1 text-sm md:text-base  bg-white text-black px-4 py-3 font-bold border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 text-center hover:bg-gray-700 hover:text-white"
