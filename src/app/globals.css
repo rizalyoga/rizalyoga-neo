@@ -15,4 +15,32 @@ html {
   .shadow-board-contact-description {
     @apply p-6 border-4 border-black shadow-[8px_8px_0px_0px_#000];
   }
+
+  .skewed-grid-background {
+    @apply relative p-4 overflow-hidden;
+    mask-image: radial-gradient(circle, white 50%, transparent 80%);
+  }
+
+  .skewed-grid-background::before {
+    content: "";
+    @apply absolute w-[160%] h-[160%] top-[-50%] left-[-50%];
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .dark .skewed-grid-background::before {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+
+  .skewed-grid-background > * {
+    @apply relative;
+    z-index: 2;
+  }
 }

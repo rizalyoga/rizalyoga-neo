@@ -1,18 +1,20 @@
 import { Mail, Download } from "lucide-react";
 import { FiLinkedin } from "react-icons/fi";
 import { PiGithubLogoBold } from "react-icons/pi";
-import Image from "next/image";
 import LinkIconButton from "../buttons/LinkIconButton";
 import LinkStringButton from "../buttons/LinkStringButton";
 import TextAnimationHero from "../TextAnimationHero";
+// import BrutalismBlocks from "../decorations/BrutalismBlocks";
+import TechGrid from "./TechGrid";
 
 const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="flex items-center justify-center min-h-screen pt-20 transition-colors bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-700"
+      className="relative flex items-center justify-center min-h-screen pt-20 overflow-hidden transition-colors bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-700"
     >
-      <div className="container px-6 mx-auto">
+      {/* <BrutalismBlocks /> */}
+      <div className="container relative z-10 px-6 mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-2 ">
           {/* Text Content */}
           <div className="space-y-8">
@@ -76,20 +78,10 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
-          <div className=" hidden  justify-center  lg:justify-start lg:ml-32 ">
-            <div className="bg-pink-400 p-8 border-4 border-black shadow-[16px_16px_0px_0px_#000] transform rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div className="relative w-[17rem] lg:w-[18rem] xl:w-[24rem] h-[17rem] lg:h-[18rem] xl:h-[24rem] bg-[#FFD701]">
-                <Image
-                  src="/logo.png"
-                  alt="Profile"
-                  fill
-                  className="object-cover border-4 border-black"
-                  quality={95}
-                  priority={true}
-                  sizes="(max-width: 768px) 20rem, 24rem"
-                />
-              </div>
+          {/* Tech Grid */}
+          <div className="hidden lg:flex justify-end h-full items-top lg:ml-24 ">
+            <div className="mr-0 xl:mr-16 mt-10 z-50">
+              <TechGrid />
             </div>
           </div>
         </div>
