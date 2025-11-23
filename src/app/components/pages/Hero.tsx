@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center min-h-screen pt-20 overflow-hidden transition-colors bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-700"
+      className="relative flex items-center justify-center min-h-screen pt-20 overflow-hidden transition-colors bg-gradient-to-br dark:from-gray-900 dark:to-gray-700"
     >
       {/* <BrutalismBlocks /> */}
       <div className="container relative z-10 px-6 mx-auto">
@@ -79,6 +79,11 @@ const HeroSection = () => {
           </div>
 
           {/* Tech Grid */}
+          <div className="absolute border-4 border-black h-40 w-40 rounded-full bg-lime-500 dark:bg-lime-400 -top-1 right-[28rem] -z-10 hidden lg:block"></div>
+          <div className="absolute border-4 border-black h-20 w-20 rounded-full bg-rose-500 dark:bg-rose-400 top-20 right-6 -z-10 hidden lg:block"></div>
+          <div className="absolute border-4 border-black h-36 w-36 rounded-full bg-blue-500 dark:bg-blue-400 top-[17rem] right-32 -z-10 hidden lg:block"></div>
+          <div className="absolute border-4 border-black h-20 w-20 rounded-full bg-orange-500 dark:bg-orange-400 top-36 right-[22rem] -z-10 hidden lg:block"></div>
+
           <div className="hidden lg:flex justify-end h-full items-top lg:ml-24 ">
             <div className="mr-0 xl:mr-16 mt-10 z-50">
               <TechGrid />

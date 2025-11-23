@@ -21,7 +21,7 @@ const AboutMe = () => {
         <div className="bg-indigo-50 dark:bg-slate-200  board-description shadow-board-contact-description md:text-justify">
           {/* Medium to higher screen content */}
           <span className="space-y-4 hidden md:block">
-            <p className="text-base md:text-lg font-bold dark:text-black ">
+            <p className="text-base md:text-lg font-semibold dark:text-black ">
               Hello! I’m{" "}
               <span className="text-orange-600 dark:text-purple-600">
                 Rizalyoga
@@ -31,7 +31,7 @@ const AboutMe = () => {
               focused on computer networking, I discovered a strong passion for
               web development after graduating in 2021.
             </p>
-            <p className="text-base md:text-lg font-bold dark:text-black ">
+            <p className="text-base md:text-lg font-semibold dark:text-black ">
               To deepen my skills in this field, I joined a{" "}
               <span className="text-orange-600 dark:text-purple-600">
                 Front-End Developer bootcamp
@@ -44,7 +44,7 @@ const AboutMe = () => {
               for a year before deciding to fully shift my focus back to web
               development.
             </p>
-            <p className="text-base md:text-lg font-bold dark:text-black ">
+            <p className="text-base md:text-lg font-semibold dark:text-black ">
               Since then, I’ve worked on several{" "}
               <span className="text-orange-600 dark:text-purple-600">
                 freelance projects
@@ -64,7 +64,7 @@ const AboutMe = () => {
               .
             </p>
 
-            <p className="text-base md:text-lg font-bold dark:text-black ">
+            <p className="text-base md:text-lg font-semibold dark:text-black ">
               Currently, I’m actively building my portfolio and expanding my
               skills in{" "}
               <span className="text-orange-600 dark:text-purple-600">

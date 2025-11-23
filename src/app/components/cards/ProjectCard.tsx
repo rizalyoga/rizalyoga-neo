@@ -39,7 +39,7 @@ const ProjectCard = ({
         <h3 className="mb-3 text-xl md:text-2xl font-black text-black">
           {title}
         </h3>
-        <p className="mb-4 font-bold leading-relaxed text-black line-clamp-2">
+        <p className="mb-4 font-semibold leading-relaxed text-black line-clamp-2">
           {description}
         </p>
 
@@ -48,7 +48,7 @@ const ProjectCard = ({
           {technologies?.map((tech, techIndex) => (
             <span
               key={techIndex}
-              className="px-3 py-1 text-sm font-bold text-black bg-white border-2 border-black"
+              className="px-3 py-1 text-xs font-semibold text-black bg-white border-2 border-black"
             >
               {tech}
             </span>

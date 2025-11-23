@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useTheme } from "../../providers/ThemeProvider";
-import { animate } from "motion";
 
 const BrutalismBlocks = () => {
   const { theme } = useTheme();
@@ -46,48 +45,10 @@ const BrutalismBlocks = () => {
   const currentBlocks =
     theme === "dark" || theme === "light" ? darkBlocks : blocks;
 
-  useEffect(() => {
-    if (!containerRef.current) return;
-
-    const blockElements = Array.from(
-      containerRef.current.children
-    ) as HTMLDivElement[];
-
-    // Animate on load
-    blockElements.forEach((block, index) => {
-      animate(
-        block,
-        {
-          scale: [0, 1],
-          opacity: [0, 0.5],
-          rotate: [0, parseInt(currentBlocks[index].rotation)],
-        },
-        { delay: index * 0.2, duration: 0.5 }
-      );
-    });
-
-    // Parallax on mouse move
-    const handleMouseMove = (e: MouseEvent) => {
-      const { clientX, clientY } = e;
-      const { innerWidth, innerHeight } = window;
-
-      const moveX = (clientX / innerWidth - 0.5) * 100;
-      const moveY = (clientY / innerHeight - 0.5) * 100;
-
-      blockElements.forEach((block, index) => {
-        const speed = currentBlocks[index].speed;
-        const rotation = parseInt(currentBlocks[index].rotation);
-      });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [currentBlocks]);
-
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none"
+      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-50"
       aria-hidden="true"
     >
       {currentBlocks.map((block, index) => (
