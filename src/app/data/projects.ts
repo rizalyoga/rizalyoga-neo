@@ -21,7 +21,7 @@ export const myProjects = [
   {
     id: "Mindmap-Autisme",
     cover: "/assets/portofolio-cover/mindmap-autisme.webp",
-    title: "Mindmap-Autisme",
+    title: "Mindmap Autisme",
     technologies: [
       "Next-14",
       "Typescript",
@@ -74,7 +74,7 @@ export const myProjects = [
   {
     id: "Job-Track",
     cover: "/assets/portofolio-cover/job-track-cover.webp",
-    title: "Job-Track",
+    title: "Job Track",
     technologies: [
       "React-19",
       "TypeScript",
@@ -161,6 +161,31 @@ export const myProjects = [
     ],
   },
   {
+    id: "Job-Track-Back-end",
+    cover: "",
+    title: "Job Track Back-end",
+    technologies: [
+      "Express",
+      "TypeScript",
+      "Supabase",
+      "JWT",
+      "Swagger",
+      "nodemailer",
+    ],
+    description:
+      "Back end for tracking and managing job applications, built with Express, TypeScript and PostgreSQL (Supabase).",
+    demoUrl: "",
+    githubUrl: "https://github.com/rizalyoga/working-application-management",
+    videoUrl: "",
+    color: "bg-pink-400 dark:bg-pink-300",
+    features: [
+      "Authentication & Authorization API",
+      "Job Application Management API",
+      "User Data Management API",
+      "Calendar Schedule Management API",
+    ],
+  },
+  {
     id: "Shelter.Aja",
     cover: "/assets/portofolio-cover/shelter-aja.webp",
     title: "Shelter.Aja",
@@ -187,10 +212,10 @@ export const myProjects = [
   {
     id: "Simple-Kanban",
     cover: "/assets/portofolio-cover/simple-kanban.webp",
-    title: "Simple-Kanban",
+    title: "Simple Kanban",
     technologies: ["React", "TypeScript", "Tailwind", "SWR", "Fullstack"],
     description:
-      "Simple-Kanban project is a web application designed to replicate the core functions and features of a Kanban board.",
+      "Simple Kanban project is a web application designed to replicate the core functions and features of a Kanban board.",
     demoUrl: "https://simple-canban-clone.vercel.app/",
     githubUrl: "https://github.com/rizalyoga/simple-canban-clone",
     videoUrl: "https://youtu.be/3r12TI0wZeA",
@@ -200,10 +225,10 @@ export const myProjects = [
   {
     id: "Simple-Kanban-Back-end",
     cover: "",
-    title: "Simple-Kanban-Back-end",
+    title: "Simple Kanban Back-end",
     technologies: ["React", "TypeScript", "Tailwind", "SWR", "Fullstack"],
     description:
-      "Back-end for Simple-Kanban project. Simple-Kanban project is a web application designed to replicate the core functions and features of a Kanban board.",
+      "Back-end for Simple Kanban project. Simple-Kanban project is a web application designed to replicate the core functions and features of a Kanban board.",
     demoUrl: "",
     githubUrl: "https://github.com/rizalyoga/simple-kanban-be",
     videoUrl: "",
@@ -213,10 +238,10 @@ export const myProjects = [
   {
     id: "Pomodoro-Timer",
     cover: "/assets/portofolio-cover/pomodoro-timer.webp",
-    title: "Pomodoro-Timer",
-    technologies: ["React", "TypeScript", "Tailwind", "bun"],
+    title: "Pomodoro Timer",
+    technologies: ["React", "TypeScript", "Tailwind", "Bun"],
     description:
-      "Pomodoro-timer a web application that helps users in applying Pomodoro",
+      "Pomodoro timer a web application that helps users in applying Pomodoro",
     demoUrl: "https://pomodoro-timer-rizalyoga.netlify.app/",
     githubUrl: "https://github.com/rizalyoga/pomodoro-timer",
     videoUrl: "https://youtu.be/b02sXjbYPxc",
@@ -226,7 +251,7 @@ export const myProjects = [
   {
     id: "Shopping-notes",
     cover: "/assets/portofolio-cover/shopping-notes.webp",
-    title: "Shopping-notes",
+    title: "Shopping Notes",
     technologies: ["React Native", "TypeScript", "Expo", "Native wind"],
     description:
       "Shopping Notes App is a android mobile application designed to help users manage and track their shopping expenses more efficiently.",
@@ -297,7 +322,7 @@ export const myProjects = [
     title: "Daster Bunda Pasuruan",
     technologies: ["HTML", "CSS", "Javascript"],
     description: "A landing Page to help sales of daster online.",
-    demoUrl: "https://daster-bunda-pasuruan.netlify.app/",
+    demoUrl: "https://daster-Bunda-pasuruan.netlify.app/",
     githubUrl: "",
     videoUrl: "",
     color: "bg-pink-400 dark:bg-pink-300",
@@ -500,7 +525,7 @@ export const myProjects = [
     githubUrl: "https://github.com/rizalyoga/ecommerce-catalog/",
     videoUrl: "",
     color: "bg-violet-400 dark:bg-violet-300",
-    features: ["Responsive website"],
+    features: ["Responsive website", "Display product from Fake store API"],
   },
   {
     id: "My Personal Notes",
@@ -513,18 +538,18 @@ export const myProjects = [
     githubUrl: "https://github.com/rizalyoga/notes-app",
     videoUrl: "",
     color: "bg-cyan-400 dark:bg-cyan-300",
-    features: ["Responsive Website", "PWA"],
+    features: ["Note Management", "Responsive Website", "PWA"],
   },
-  {
-    id: "Quote Generator",
-    cover: "/assets/portofolio-cover/quote-generator.webp",
-    title: "Quote Generator",
-    technologies: ["React", "TypeScript", "Chart.js", "Weather API"],
-    description: " - ",
-    demoUrl: "https://quotesapps-rizalyoga.netlify.app/",
-    githubUrl: "https://github.com/rizalyoga/quote-generator",
-    videoUrl: "",
-    color: "bg-pink-400 dark:bg-pink-300",
-    features: [],
-  },
+  // {
+  //   id: "Quote Generator",
+  //   cover: "/assets/portofolio-cover/quote-generator.webp",
+  //   title: "Quote Generator",
+  //   technologies: ["React", "TypeScript", "Chart.js", "Weather API"],
+  //   description: " - ",
+  //   demoUrl: "https://quotesapps-rizalyoga.netlify.app/",
+  //   githubUrl: "https://github.com/rizalyoga/quote-generator",
+  //   videoUrl: "",
+  //   color: "bg-pink-400 dark:bg-pink-300",
+  //   features: [],
+  // },
 ];

@@ -29,14 +29,14 @@ const LinkStringButton = ({
       target={target ? target : "_blank"}
       rel="noopener noreferrer"
       className={clsx(
-        `text-sm md:text-base inline-flex items-center gap-2 ${bgColor} ${textColor} ${px} ${py} font-bold border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1`,
+        `text-xs md:text-sm inline-flex items-center gap-2 ${bgColor} ${textColor} ${px} ${py} font-bold border-4 border-black shadow-[6px_6px_0px_0px_#000] hover:shadow-[3px_3px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1`,
         directUrl
           ? ""
           : "cursor-none pointer-events-none !bg-gray-600 dark:!bg-gray-500 shadow-none"
       )}
     >
       {icon}
-      {btnTitle}
+      <span className="hidden md:block mt-1">{btnTitle}</span>
     </Link>
   );
 };

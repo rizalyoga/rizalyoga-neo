@@ -37,7 +37,7 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex-wrap gap-4 hidden sm:flex">
               <LinkStringButton
                 btnTitle="Download CV"
                 bgColor="bg-lime-400 dark:bg-lime-300"
@@ -61,7 +61,14 @@ const HeroSection = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 ">
+              <LinkIconButton
+                directLink="https://drive.google.com/file/d/13ooAoP6iAoM9aCtm1AivANafl9Wb8Lkw/view?usp=drive_link"
+                bgColor="bg-lime-400 dark:bg-lime-300"
+                textColor="text-white sm:hidden"
+                icon={<Download size={24} />}
+              />
+
               <LinkIconButton
                 directLink="https://github.com/rizalyoga"
                 bgColor="bg-black"

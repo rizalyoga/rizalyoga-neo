@@ -57,7 +57,7 @@ const ProjectDetail = async ({ params }: { params: ParamsType }) => {
               </h1>
 
               <div className="bg-yellow-300 dark:bg-yellow-200 mb-8 shadow-board-contact-description">
-                <p className="text-base md:text-lg font-bold leading-relaxed text-black">
+                <p className="text-base font-semibold leading-relaxed text-black">
                   {project?.description}
                 </p>
               </div>
@@ -94,7 +94,7 @@ const ProjectDetail = async ({ params }: { params: ParamsType }) => {
                   {project?.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="text-sm md:text-base bg-cyan-400 dark:bg-cyan-300 text-black px-4 py-2 font-bold border-2 border-black shadow-[4px_4px_0px_0px_#000]"
+                      className="text-xs md:text-sm bg-cyan-400 dark:bg-cyan-300 text-black px-4 py-2 font-semibold border-2 border-black shadow-[4px_4px_0px_0px_#000]"
                     >
                       {tech}
                     </span>

@@ -104,7 +104,7 @@ const ContactForm = () => {
             <input
               {...register("name")}
               className={clsx(
-                "w-full p-4 border-4 border-black font-bold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
+                "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
                 errors.name && "border-red-500"
               )}
               disabled={isSubmitting}
@@ -122,7 +122,7 @@ const ContactForm = () => {
             <input
               {...register("email")}
               className={clsx(
-                "w-full p-4 border-4 border-black font-bold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
+                "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
                 errors.email && "border-red-500"
               )}
               disabled={isSubmitting}
@@ -141,7 +141,7 @@ const ContactForm = () => {
           <input
             {...register("subject")}
             className={clsx(
-              "w-full p-4 border-4 border-black font-bold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
+              "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
               errors.subject && "border-red-500"
             )}
             disabled={isSubmitting}
@@ -160,7 +160,7 @@ const ContactForm = () => {
             {...register("message")}
             rows={6}
             className={clsx(
-              "w-full p-4 border-4 border-black font-bold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow resize-none text-black bg-white dark:bg-[#252839] dark:text-white",
+              "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow resize-none text-black bg-white dark:bg-[#252839] dark:text-white",
               errors.message && "border-red-500"
             )}
             disabled={isSubmitting}
