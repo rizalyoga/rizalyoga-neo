@@ -28,7 +28,7 @@ export const myProjects = [
       "Tailwindcss",
       "Daisy-ui",
       "Prisma-orm ",
-      "JWT,",
+      "JWT",
       "Fullstack",
     ],
     description:
@@ -170,7 +170,7 @@ export const myProjects = [
       "Supabase",
       "JWT",
       "Swagger",
-      "nodemailer",
+      "Nodemailer",
     ],
     description:
       "Back end for tracking and managing job applications, built with Express, TypeScript and PostgreSQL (Supabase).",

@@ -1,0 +1,16 @@
+[test]
+preload = ["./happydom.ts", "./testing-library.ts"]
+coverage = true
+
+root = "__test__"
+
+coverageSkipTestFiles = true 
+coveragePathIgnorePatterns = [
+  "**/*.spec.ts",
+  "**/*.test.ts",
+  "src/utils/**",
+  "*.config.js",
+  # Exclude configuration files
+  "happydom.ts", 
+  "testing-library.ts"
+]

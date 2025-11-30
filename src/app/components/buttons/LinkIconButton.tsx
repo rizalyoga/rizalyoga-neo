@@ -7,6 +7,7 @@ interface LinkIconButtonInterface {
   directLink: string;
   bgColor: string;
   textColor: string;
+  ariaLabel?: string;
 }
 
 const LinkIconButton = ({
@@ -14,11 +15,14 @@ const LinkIconButton = ({
   icon,
   bgColor,
   textColor,
+  ariaLabel,
 }: LinkIconButtonInterface) => {
   return (
     <Link
       href={directLink}
       target="_blank"
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
       className={
         (clsx(),
         directLink
