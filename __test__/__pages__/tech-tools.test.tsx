@@ -14,6 +14,8 @@ describe("Technologies section test", () => {
     );
 
     expect(title).toBeInTheDocument();
+    expect(title).toHaveTextContent("TECHS & TOOLS");
+
     expect(desc).toBeInTheDocument();
   });
 
