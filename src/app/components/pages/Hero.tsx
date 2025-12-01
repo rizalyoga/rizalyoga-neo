@@ -67,6 +67,7 @@ const HeroSection = () => {
                 bgColor="bg-lime-400 dark:bg-lime-300"
                 textColor="text-white sm:hidden"
                 icon={<Download size={24} />}
+                ariaLabel="Download CV"
               />
 
               <LinkIconButton
@@ -74,6 +75,7 @@ const HeroSection = () => {
                 bgColor="bg-black"
                 textColor="text-white"
                 icon={<PiGithubLogoBold size={24} />}
+                ariaLabel="GitHub"
               />
 
               <LinkIconButton
@@ -81,6 +83,7 @@ const HeroSection = () => {
                 bgColor="bg-blue-500"
                 textColor="text-white"
                 icon={<FiLinkedin size={24} />}
+                ariaLabel="LinkedIn"
               />
             </div>
           </div>

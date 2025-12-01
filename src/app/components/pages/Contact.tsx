@@ -35,16 +35,16 @@ const Contact = () => {
                 work on new challenges and collaborate with new people.
               </p>
 
-              <div className="space-y-4">
+              <div data-testid="social-media-container" className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="p-3 text-white bg-black border-2 border-black">
                     <Mail size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-black">Email</div>
-                    <div className="text-sm md:text-lg text-black">
+                    <p className="font-bold text-black">Email</p>
+                    <p className="text-sm md:text-lg text-black">
                       ach.rizal.yogaswara@gmail.com
-                    </div>
+                    </p>
                   </div>
                 </div>
 
@@ -53,10 +53,8 @@ const Contact = () => {
                     <FiLinkedin size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-black">Linkedin</div>
-                    <div className="text-sm md:text-lg text-black">
-                      @rizalyoga
-                    </div>
+                    <p className="font-bold text-black">Linkedin</p>
+                    <p className="text-sm md:text-lg text-black">@rizalyoga</p>
                   </div>
                 </div>
 
@@ -65,10 +63,10 @@ const Contact = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <div className="font-bold text-black">Location</div>
-                    <div className="text-sm md:text-lg text-black">
+                    <p className="font-bold text-black">Location</p>
+                    <p className="text-sm md:text-lg text-black">
                       Mojokerto, Indonesia
-                    </div>
+                    </p>
                   </div>
                 </div>
               </div>

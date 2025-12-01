@@ -97,11 +97,16 @@ const ContactForm = () => {
         SEND MESSAGE
       </h3>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form
+        data-testid="contact-form"
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-6"
+      >
         <div className="grid gap-4 md:grid-cols-2">
           <div>
-            <label className="block mb-2 font-bold text-black">Name *</label>
+            <label htmlFor="name" className="block mb-2 font-bold text-black">Name *</label>
             <input
+              id="name"
               {...register("name")}
               className={clsx(
                 "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
@@ -118,8 +123,9 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label className="block mb-2 font-bold text-black">Email *</label>
+            <label htmlFor="email" className="block mb-2 font-bold text-black">Email *</label>
             <input
+              id="email"
               {...register("email")}
               className={clsx(
                 "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
@@ -137,15 +143,16 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label className="block mb-2 font-bold text-black">Subject *</label>
+          <label htmlFor="subject" className="block mb-2 font-bold text-black">Subject *</label>
           <input
+            id="subject"
             {...register("subject")}
             className={clsx(
               "w-full p-4 border-4 border-black font-semibold focus:outline-none focus:shadow-[4px_4px_0px_0px_#000] transition-shadow text-black bg-white dark:bg-[#252839] dark:text-white",
               errors.subject && "border-red-500"
             )}
             disabled={isSubmitting}
-            placeholder="Project Subject"
+            placeholder="Email subject"
           />
           {errors.subject && (
             <p className="mt-2 text-sm text-black font-bold">
@@ -155,8 +162,9 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label className="block mb-2 font-bold text-black">Message *</label>
+          <label htmlFor="message" className="block mb-2 font-bold text-black">Message *</label>
           <textarea
+            id="message"
             {...register("message")}
             rows={6}
             className={clsx(
