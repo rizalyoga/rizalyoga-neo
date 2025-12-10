@@ -20,7 +20,7 @@ export const myProjects = [
   },
   {
     id: "Mindmap-Autisme",
-    cover: "/assets/portofolio-cover/mindmap-autisme.webp",
+    cover: "/assets/portofolio-cover/mindmap.webp",
     title: "Mindmap Autisme",
     technologies: [
       "Next-14",
