@@ -59,7 +59,7 @@ const ProjectCard = ({
         {/* Action Buttons */}
         <div className="flex gap-3 mt-auto">
           <Link
-            href={`/project/${id.replaceAll(" ", "-")}`}
+            href={`/projects/${id.replaceAll(" ", "-")}`}
             className={clsx(
               "flex-1 text-sm md:text-base  bg-white text-black px-4 py-3 font-bold border-4 border-black shadow-[4px_4px_0px_0px_#000] hover:shadow-[2px_2px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1 text-center",
               ``

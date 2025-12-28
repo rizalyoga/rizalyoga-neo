@@ -38,7 +38,7 @@ export const generateMetadata = async ({
     openGraph: {
       title: `Rizalyoga | ${project?.title}`,
       description: `${project?.description}`,
-      url: `https://rizalyoga.my.id/project/${project_id}`,
+      url: `https://rizalyoga.my.id/projects/${project_id}`,
       type: "website",
       siteName: `Rizalyoga | ${project?.title}`,
       images: [
