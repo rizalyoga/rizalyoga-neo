@@ -1,40 +1,12 @@
 "use client";
 
 import { myProjects } from "@/app/data/projects";
-import { useEffect, useState } from "react";
 import ProjectCard from "../cards/ProjectCard";
-import { ProjectInterface } from "@/app/types/types";
 import TitleSection from "../title-section/TitleSection";
+import Link from "next/link";
 
 const Projects = () => {
-  const [isShowAll, setIsShowAll] = useState(() => {
-    // Baca nilai awal dari sessionStorage
-    if (typeof window !== "undefined") {
-      return sessionStorage.getItem("showAllProjects") === "true";
-    }
-    return false;
-  });
-  const [listProject, setListProject] = useState<ProjectInterface[]>([]);
   const sliceProject = myProjects.slice(0, 6);
-
-  const showAllProjectHandler = () => {
-    setIsShowAll((showAll) => {
-      const newValue = !showAll;
-      // Simpan ke sessionStorage
-      if (typeof window !== "undefined") {
-        sessionStorage.setItem("showAllProjects", newValue.toString());
-      }
-      return newValue;
-    });
-  };
-
-  useEffect(() => {
-    if (!isShowAll) {
-      setListProject(sliceProject);
-    } else {
-      setListProject(myProjects);
-    }
-  }, [isShowAll]);
 
   return (
     <section
@@ -55,7 +27,7 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid gap-8 mb-12  lg:grid-cols-2 xl:grid-cols-3">
-          {listProject?.map((project) => (
+          {sliceProject?.map((project) => (
             <ProjectCard
               key={project.id}
               id={project.id}
@@ -72,12 +44,12 @@ const Projects = () => {
 
         {/* View All Projects Button */}
         <div className="text-center">
-          <button
+          <Link
+            href={"/projects"}
             className="bg-yellow-400 dark:bg-yellow-300 text-black px-8 py-4 font-bold text-base md:text-lg border-4 border-black shadow-[8px_8px_0px_0px_#000] hover:shadow-[4px_4px_0px_0px_#000] transition-all duration-200 hover:translate-x-1 hover:translate-y-1"
-            onClick={showAllProjectHandler}
           >
-            {!isShowAll ? " VIEW ALL PROJECTS" : "HIDE PROJECTS"}
-          </button>
+            {"VIEW ALL PROJECTS"}
+          </Link>
         </div>
       </div>
     </section>
